@@ -19,12 +19,15 @@ function noticeTodaysSchdule() {
     if( events.length > 0 ) {
       text += "\n";
     }
+    if (!events.length) {
+      text = Utilities.formatDate(new Date(), 'JST', 'yyyy/MM/dd') + "\nおはようございます、ご主人様。\n本日のご予定はございません。\nもっとしっかり働き稼いでくださいませ。";
+    }
   }
   sendToLine(text);
 }
 
 function sendToLine(text){
-  var token = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+  var token = 'B97TFLVgjIBUyLnSMvm8VNgVFl11Be2jJpBOG7ssum8';
   var options =
    {
      "method"  : "post",
