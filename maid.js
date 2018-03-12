@@ -27,7 +27,7 @@ function noticeTodaysSchdule() {
 }
 
 function sendToLine(text){
-  var token = 'B97TFLVgjIBUyLnSMvm8VNgVFl11Be2jJpBOG7ssum8';
+  var token = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
   var options =
    {
      "method"  : "post",
